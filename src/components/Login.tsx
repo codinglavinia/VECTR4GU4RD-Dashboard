@@ -15,7 +15,7 @@ export default function Login({ onLogin }: LoginProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (username === 'Eddie' && password === 'adminLVectraGuard82') {
+    if (username === 'Admin' && password === 'LVvectraguard82') {
       onLogin();
     } else {
       setError('Credenciales de seguridad incorrectas');
