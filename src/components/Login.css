@@ -78,8 +78,8 @@
 }
 
 .login-logo {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   position: relative;
@@ -91,11 +91,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
   background: var(--accent);
-  filter: blur(20px);
-  opacity: 0.4;
+  filter: blur(30px);
+  opacity: 0.5;
   z-index: 1;
 }
 
@@ -123,7 +123,7 @@
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  color: #475569;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -179,7 +179,7 @@
 
 .login-secure-text {
   text-align: center;
-  color: #64748b;
+  color: #ffffff;
   font-size: 13px;
   margin-top: 20px;
 }
@@ -191,7 +191,7 @@
 }
 
 .login-link {
-  color: #3b82f6;
+  color: #ffffff;
   text-decoration: underline;
   font-size: 14px;
   transition: opacity 0.2s;
@@ -215,23 +215,4 @@
 .made-by {
   color: #ffffff;
   font-size: 12px;
-  opacity: 0.8;
-}
-
-.encryption-badge {
-  display: inline-block;
-  font-size: 10px;
-  color: #10b981;
-  padding: 6px 14px;
-  border-radius: 100px;
-  background: rgba(16, 185, 129, 0.05);
-  border: 1px solid rgba(16, 185, 129, 0.15);
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  margin-bottom: 20px;
-}
-
-.copyright {
-  font-size: 11px;
-  color: #334155;
 }
