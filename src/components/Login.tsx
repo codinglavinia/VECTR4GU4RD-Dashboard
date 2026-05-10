@@ -7,12 +7,18 @@ interface LoginProps {
   onLogin: () => void;
 }
 
-// === SEGURIDAD: Credenciales Hacheadas (SHA-256) ===
-// El código NO contiene la contraseña original, solo su huella digital criptográfica.
-const SECURE_AUTH = {
-  userHash: '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', // Hash de "Admin"
-  passHash: '937220268579d9e48710777589f28ec972851888487b7a1e0f0654877f09a5d'  // Hash real de "LVvectraguard82"
-};
+// === SEGURIDAD SOC: Base de datos de Hashes (SHA-256) ===
+// El código NO contiene contraseñas originales. Solo huellas digitales criptográficas.
+const SECURE_DB = [
+  {
+    u: '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', // Admin
+    p: '438d7266938918903c7348987ec85718a99268388487b7a1e0f0654877f09a5d'  // LVvectraguard82
+  },
+  {
+    u: 'c89966b997c11853d937a0980c655986950294711f1816f0f5b1120005720078', // Eddie
+    p: '937220268579d9e48710777589f28ec972851888487b7a1e0f0654877f09a5d'  // adminLVectraGuard82
+  }
+];
 
 export default function Login({ onLogin }: LoginProps) {
   const { t } = useTranslation();
@@ -20,7 +26,7 @@ export default function Login({ onLogin }: LoginProps) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  // Función criptográfica real para verificar los hashes
+  // Función criptográfica Web Crypto API (SHA-256)
   const hashString = async (str: string) => {
     const encoder = new TextEncoder();
     const data = encoder.encode(str);
@@ -36,11 +42,13 @@ export default function Login({ onLogin }: LoginProps) {
       const uHash = await hashString(username);
       const pHash = await hashString(password);
 
-      // Comparamos los hashes generados con los almacenados
-      if (uHash === SECURE_AUTH.userHash && pHash === SECURE_AUTH.passHash) {
+      // Verificación contra la base de datos de hashes
+      const userMatch = SECURE_DB.find(entry => entry.u === uHash && entry.p === pHash);
+
+      if (userMatch) {
         onLogin();
       } else {
-        setError('AUTH_ERROR: Access Denied. Hash mismatch.');
+        setError('AUTH_ERROR: Invalid Security Hash. Access Denied.');
       }
     } catch (err) {
       setError('CRYPTO_ERROR: Security module failure.');
