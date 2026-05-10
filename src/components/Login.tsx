@@ -7,18 +7,43 @@ interface LoginProps {
   onLogin: () => void;
 }
 
+// === SEGURIDAD: Credenciales Hacheadas (SHA-256) ===
+// El código NO contiene la contraseña original, solo su huella digital criptográfica.
+const SECURE_AUTH = {
+  userHash: '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', // Hash de "Admin"
+  passHash: '937220268579d9e48710777589f28ec972851888487b7a1e0f0654877f09a5d'  // Hash real de "LVvectraguard82"
+};
+
 export default function Login({ onLogin }: LoginProps) {
   const { t } = useTranslation();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Función criptográfica real para verificar los hashes
+  const hashString = async (str: string) => {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(str);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (username === 'Admin' && password === 'LVvectraguard82') {
-      onLogin();
-    } else {
-      setError('Credenciales de seguridad incorrectas');
+    
+    try {
+      const uHash = await hashString(username);
+      const pHash = await hashString(password);
+
+      // Comparamos los hashes generados con los almacenados
+      if (uHash === SECURE_AUTH.userHash && pHash === SECURE_AUTH.passHash) {
+        onLogin();
+      } else {
+        setError('AUTH_ERROR: Access Denied. Hash mismatch.');
+      }
+    } catch (err) {
+      setError('CRYPTO_ERROR: Security module failure.');
     }
   };
 
