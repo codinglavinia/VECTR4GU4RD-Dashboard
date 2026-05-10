@@ -27,7 +27,6 @@ export interface DatasetResult {
   alerts: AlertRecord[];
   streamRecords: NetworkRecord[];
   loading: boolean;
-  error: string | null;
 }
 
 function getSeverity(attackCat: string, label: string): 'critical' | 'high' | 'medium' | 'safe' {
@@ -53,7 +52,6 @@ export function useDataset(): DatasetResult {
   const [sourceData, setSourceData] = useState<NetworkRecord[]>([]);
   const [currentIndex, setCurrentIndex] = useState(5); 
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     Papa.parse('/CSV Files/Training and Testing Sets/UNSW_NB15_testing-set.csv', {
@@ -121,7 +119,6 @@ export function useDataset(): DatasetResult {
     stats,
     alerts,
     streamRecords,
-    loading,
-    error
+    loading
   };
 }
