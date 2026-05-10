@@ -37,16 +37,15 @@ export default function Login({ onLogin }: LoginProps) {
             <div className="logo-glow"></div>
           </div>
           <h1>VectraGuard</h1>
-          <p className="login-subtitle">Security Operations Center Access</p>
         </div>
 
         <form onSubmit={handleSubmit} className="login-form">
           <div className="form-group">
-            <label>Security ID</label>
+            <label>Login:</label>
             <div className="input-wrapper">
               <input 
                 type="text" 
-                placeholder="Introduzca ID" 
+                placeholder="Eddie" 
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
@@ -55,7 +54,7 @@ export default function Login({ onLogin }: LoginProps) {
           </div>
           
           <div className="form-group">
-            <label>Access Code</label>
+            <label>Password</label>
             <div className="input-wrapper">
               <input 
                 type="password" 
@@ -78,7 +77,7 @@ export default function Login({ onLogin }: LoginProps) {
           <div className="encryption-badge">
             <span className="lock-icon">🔒</span> AES-256 Encrypted Connection
           </div>
-          <p className="copyright">© 2026 VectraGuard Cyber Intelligence</p>
+          <p className="copyright">© 2026 VectraGuard by @codinglavinia</p>
         </div>
       </div>
     </div>
