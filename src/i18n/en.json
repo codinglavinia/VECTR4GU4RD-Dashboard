@@ -52,7 +52,15 @@
   "severity": {
     "critical": "CRITICAL",
     "high": "High risk",
-    "medium": "Medium risk",
+    "medium": "Medium",
     "safe": "SAFE"
+  },
+  "login": {
+    "label": "Login (id/email)",
+    "password": "Password",
+    "submit": "Sign in",
+    "secure_access": "Secure access to your digital environment",
+    "create_account": "Create account",
+    "forgot_password": "Forgot password?"
   }
 }

@@ -179,6 +179,30 @@
   border: 1px solid rgba(239, 68, 68, 0.2);
 }
 
+.login-secure-text {
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.login-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.login-link {
+  color: #3b82f6;
+  text-decoration: underline;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.login-link:hover {
+  opacity: 0.8;
+}
+
 .login-footer {
   margin-top: 40px;
   text-align: center;

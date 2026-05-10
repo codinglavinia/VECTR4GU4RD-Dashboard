@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Login.css';
 import logo from '../assets/logo.png';
 
@@ -7,13 +8,13 @@ interface LoginProps {
 }
 
 export default function Login({ onLogin }: LoginProps) {
+  const { t } = useTranslation();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Credenciales personalizadas para la demo
     if (username === 'Eddie' && password === 'adminLVectraGuard82') {
       onLogin();
     } else {
@@ -23,7 +24,6 @@ export default function Login({ onLogin }: LoginProps) {
 
   return (
     <div className="login-page">
-      {/* Elementos de fondo decorativos para profundidad */}
       <div className="login-background">
         <div className="bg-circle circle-1"></div>
         <div className="bg-circle circle-2"></div>
@@ -41,11 +41,11 @@ export default function Login({ onLogin }: LoginProps) {
 
         <form onSubmit={handleSubmit} className="login-form">
           <div className="form-group">
-            <label>Login:</label>
+            <label>{t('login.label')}</label>
             <div className="input-wrapper">
               <input 
                 type="text" 
-                placeholder="Eddie" 
+                placeholder="" 
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
@@ -54,11 +54,11 @@ export default function Login({ onLogin }: LoginProps) {
           </div>
           
           <div className="form-group">
-            <label>Password :</label>
+            <label>{t('login.password')}</label>
             <div className="input-wrapper">
               <input 
                 type="password" 
-                placeholder="••••••••••••••" 
+                placeholder="" 
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
@@ -69,9 +69,16 @@ export default function Login({ onLogin }: LoginProps) {
           {error && <div className="login-error">{error}</div>}
 
           <button type="submit" className="login-btn">
-            Authenticate System
+            {t('login.submit')}
           </button>
+
+          <p className="login-secure-text">{t('login.secure_access')}</p>
         </form>
+
+        <div className="login-links">
+          <a href="#create" className="login-link">{t('login.create_account')}</a>
+          <a href="#forgot" className="login-link">{t('login.forgot_password')}</a>
+        </div>
 
         <div className="login-footer">
           <div className="encryption-badge">
