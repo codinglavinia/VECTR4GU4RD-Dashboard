@@ -54,7 +54,7 @@ export default function Login({ onLogin }: LoginProps) {
           </div>
           
           <div className="form-group">
-            <label>Password</label>
+            <label>Password :</label>
             <div className="input-wrapper">
               <input 
                 type="password" 
