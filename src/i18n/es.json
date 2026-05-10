@@ -56,7 +56,7 @@
     "safe": "SEGURO"
   },
   "login": {
-    "label": "Login (id/email)",
+    "label": "Login",
     "password": "Password",
     "submit": "Sign in",
     "secure_access": "Secure access to your digital environment",
