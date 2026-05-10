@@ -11,12 +11,12 @@ interface LoginProps {
 // El código NO contiene contraseñas originales. Solo huellas digitales criptográficas.
 const SECURE_DB = [
   {
-    u: '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', // Admin
-    p: '438d7266938918903c7348987ec85718a99268388487b7a1e0f0654877f09a5d'  // LVvectraguard82
+    u: 'c1c224b03cd9bc7b6a86d77f5dace40191766c485cd55dc48caf9ac873335d6f', // Admin
+    p: '8383c861a579785cb29805c5288b954670ec70913e90aaeea729f1b90d0d4589'  // LVvectraguard82
   },
   {
-    u: 'c89966b997c11853d937a0980c655986950294711f1816f0f5b1120005720078', // Eddie
-    p: '937220268579d9e48710777589f28ec972851888487b7a1e0f0654877f09a5d'  // adminLVectraGuard82
+    u: '72f1935f451506ea984df8b6026f1f91136db9d3854bcb98e289e52ee392e0cd', // Eddie
+    p: '0a61ef0ec38833d99b6e1fd0bd22708b469e7ceb7e97f1c12dfbc982eb59fff3'  // adminLVectraGuard82
   }
 ];
 
