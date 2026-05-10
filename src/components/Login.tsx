@@ -81,10 +81,8 @@ export default function Login({ onLogin }: LoginProps) {
         </div>
 
         <div className="login-footer">
-          <div className="encryption-badge">
-            <span className="lock-icon">🔒</span> AES-256 Encrypted Connection
-          </div>
-          <p className="copyright">© 2026 VectraGuard by @codinglavinia</p>
+          <p className="copyright">© 2026 VectraGuard</p>
+          <p className="made-by">made by : @codinglavinia</p>
         </div>
       </div>
     </div>
