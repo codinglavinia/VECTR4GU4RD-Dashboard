@@ -1,0 +1,12 @@
+node_modules
+dist
+dist-ssr
+*.local
+.env
+
+# IGNORAR ABSOLUTAMENTE TODO LO PESADO
+# Así el repo será 100% código y se subirá al instante
+**/*.csv
+**/*.pdf
+**/*.zip
+**/*.exe

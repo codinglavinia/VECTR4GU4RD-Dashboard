@@ -1,0 +1,58 @@
+{
+  "header_title": "Cybersecurity Control Panel",
+  "header": {
+    "download": "Download report"
+  },
+  "general": {
+    "view_all": "View all"
+  },
+  "stats": {
+    "total_threats": "Total threats",
+    "defended": "Protected systems",
+    "failures": "System malfunctions",
+    "total_users": "Total users",
+    "compared_last_week": "Compared to last week"
+  },
+  "gauge": {
+    "title": "Security model integrity",
+    "subtitle": "Ensures accuracy and reliability of security measures.",
+    "total": "Total integrity",
+    "critical": "Critical",
+    "suspicious": "Suspicious",
+    "stable": "Stable"
+  },
+  "node": {
+    "title": "Predictive model deployment",
+    "subtitle": "In last 24 hours",
+    "filter_all": "All",
+    "filter_risk": "At risk",
+    "filter_breached": "Breached",
+    "filter_idle": "Idle",
+    "filter_new": "New detections",
+    "legend_dormant": "Dormant"
+  },
+  "stream": {
+    "title": "Live Graph and Data Stream"
+  },
+  "alerts": {
+    "title": "Top threats",
+    "cat_sequential": "Sequential breach",
+    "cat_global": "Global disruption",
+    "cat_analytical": "Analytical deduction"
+  },
+  "table": {
+    "attack": "Detection",
+    "severity": "Threat level",
+    "ip": "Source IP",
+    "dest_ip": "Dest. IP",
+    "protocol": "Protocol",
+    "status": "Status",
+    "date": "Timestamp"
+  },
+  "severity": {
+    "critical": "CRITICAL",
+    "high": "High risk",
+    "medium": "Medium risk",
+    "safe": "SAFE"
+  }
+}

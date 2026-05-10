@@ -1,0 +1,58 @@
+{
+  "header_title": "Cyber-Sicherheitskontrollfeld",
+  "header": {
+    "download": "Bericht herunterladen"
+  },
+  "general": {
+    "view_all": "Alle ansehen"
+  },
+  "stats": {
+    "total_threats": "Gesamte Bedrohungen",
+    "defended": "Geschützte Systeme",
+    "failures": "Systemstörungen",
+    "total_users": "Benutzer gesamt",
+    "compared_last_week": "Im Vergleich zur Vorwoche"
+  },
+  "gauge": {
+    "title": "Sicherheitsmodell-Integrität",
+    "subtitle": "Gewährleistet Genauigkeit und Zuverlässigkeit der Sicherheitsmaßnahmen.",
+    "total": "Gesamtintegrität",
+    "critical": "Kritisch",
+    "suspicious": "Verdächtig",
+    "stable": "Stabil"
+  },
+  "node": {
+    "title": "Einsatz von Vorhersagemodellen",
+    "subtitle": "In den letzten 24 Stunden",
+    "filter_all": "Alle",
+    "filter_risk": "Gefährdet",
+    "filter_breached": "Verletzt",
+    "filter_idle": "Leerlauf",
+    "filter_new": "Neue Erkennungen",
+    "legend_dormant": "Ruhend"
+  },
+  "stream": {
+    "title": "Live-Grafik und Datenstrom"
+  },
+  "alerts": {
+    "title": "Top Bedrohungen",
+    "cat_sequential": "Sequentielle Verletzung",
+    "cat_global": "Globale Störung",
+    "cat_analytical": "Analytische Ableitung"
+  },
+  "table": {
+    "attack": "Erkennung",
+    "severity": "Bedrohungsstufe",
+    "ip": "Quell-IP",
+    "dest_ip": "Ziel-IP",
+    "protocol": "Protokoll",
+    "status": "Status",
+    "date": "Zeitstempel"
+  },
+  "severity": {
+    "critical": "KRITISCH",
+    "high": "Hohes Risiko",
+    "medium": "Mittleres Risiko",
+    "safe": "SICHER"
+  }
+}

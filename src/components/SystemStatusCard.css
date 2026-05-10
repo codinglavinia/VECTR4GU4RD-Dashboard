@@ -1,0 +1,94 @@
+/* tarjeta de estado global del sistema */
+
+.status-card {
+  background: var(--card-bg);
+  backdrop-filter: var(--glass-effect);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left-width: 8px;
+}
+
+.status-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.status-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-secondary);
+}
+
+.status-label {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.status-count {
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.status-count strong {
+  color: var(--accent);
+  font-size: 20px;
+}
+
+.status-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.status-logo-container {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-logo-pulse {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  animation: logo-float 4s ease-in-out infinite;
+  border-radius: 50%;
+  /* Filtro de sombra base */
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+/* === VARIANTES DE COLOR PARA EL LOGO === */
+.logo-secure { filter: drop-shadow(0 0 20px var(--accent-glow)); }
+.logo-warning { filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.5)); animation: pulse-warning 2s infinite alternate; }
+.logo-critical { filter: drop-shadow(0 0 30px rgba(239, 68, 68, 0.7)); animation: pulse-critical 1.5s infinite alternate; }
+
+/* === KEYFRAMES === */
+@keyframes logo-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes pulse-warning {
+  from { filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.3)); transform: scale(1); }
+  to { filter: drop-shadow(0 0 30px rgba(245, 158, 11, 0.8)); transform: scale(1.05); }
+}
+
+@keyframes pulse-critical {
+  from { filter: drop-shadow(0 0 15px rgba(239, 68, 68, 0.5)); transform: scale(1); }
+  to { filter: drop-shadow(0 0 40px rgba(239, 68, 68, 1)); transform: scale(1.1); }
+}
+
+/* === VARIANTES DE ESTADO === */
+.status-secure { border-left-color: var(--accent); }
+.status-warning { border-left-color: var(--warning); }
+.status-critical { border-left-color: var(--danger); }

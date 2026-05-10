@@ -1,0 +1,58 @@
+{
+  "header_title": "Panel de Control de Ciberseguridad",
+  "header": {
+    "download": "Descargar informe"
+  },
+  "general": {
+    "view_all": "Ver todo"
+  },
+  "stats": {
+    "total_threats": "Total amenazas",
+    "defended": "Sistemas protegidos",
+    "failures": "Fallos del sistema",
+    "total_users": "Usuarios totales",
+    "compared_last_week": "Comparado con la semana pasada"
+  },
+  "gauge": {
+    "title": "Integridad del modelo de seguridad",
+    "subtitle": "Asegura la precisión y fiabilidad de las medidas de seguridad.",
+    "total": "Integridad total",
+    "critical": "Crítico",
+    "suspicious": "Sospechoso",
+    "stable": "Estable"
+  },
+  "node": {
+    "title": "Despliegue de modelos predictivos",
+    "subtitle": "En las últimas 24 horas",
+    "filter_all": "Todos",
+    "filter_risk": "En riesgo",
+    "filter_breached": "Vulnerado",
+    "filter_idle": "Inactivo",
+    "filter_new": "Nuevas detecciones",
+    "legend_dormant": "Latente"
+  },
+  "stream": {
+    "title": "Gráfico en Vivo y Flujo de Datos"
+  },
+  "alerts": {
+    "title": "Principales amenazas",
+    "cat_sequential": "Brecha secuencial",
+    "cat_global": "Interrupción global",
+    "cat_analytical": "Deducción analítica"
+  },
+  "table": {
+    "attack": "Detección",
+    "severity": "Nivel de amenaza",
+    "ip": "IP origen",
+    "dest_ip": "IP destino",
+    "protocol": "Protocolo",
+    "status": "Estado",
+    "date": "Fecha"
+  },
+  "severity": {
+    "critical": "CRÍTICO",
+    "high": "Riesgo alto",
+    "medium": "Riesgo medio",
+    "safe": "SEGURO"
+  }
+}

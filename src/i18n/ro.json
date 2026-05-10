@@ -1,0 +1,58 @@
+{
+  "header_title": "Panou de Control de Securitate Cibernetică",
+  "header": {
+    "download": "Descarcă raport"
+  },
+  "general": {
+    "view_all": "Vezi tot"
+  },
+  "stats": {
+    "total_threats": "Amenințări totale",
+    "defended": "Sisteme protejate",
+    "failures": "Disfuncționalități ale sistemului",
+    "total_users": "Utilizatori totali",
+    "compared_last_week": "Comparativ cu săptămâna trecută"
+  },
+  "gauge": {
+    "title": "Integritatea modelului de securitate",
+    "subtitle": "Asigură acuratețea și fiabilitatea măsurilor de securitate.",
+    "total": "Integritate totală",
+    "critical": "Critic",
+    "suspicious": "Suspect",
+    "stable": "Stabil"
+  },
+  "node": {
+    "title": "Implementare model predictiv",
+    "subtitle": "În ultimele 24 de ore",
+    "filter_all": "Toate",
+    "filter_risk": "În risc",
+    "filter_breached": "Încălcat",
+    "filter_idle": "Inactiv",
+    "filter_new": "Detectări noi",
+    "legend_dormant": "Latent"
+  },
+  "stream": {
+    "title": "Grafic Live și Flux de Date"
+  },
+  "alerts": {
+    "title": "Amenințări principale",
+    "cat_sequential": "Încălcare secvențială",
+    "cat_global": "Întrerupere globală",
+    "cat_analytical": "Deducție analitică"
+  },
+  "table": {
+    "attack": "Detectare",
+    "severity": "Nivel amenințare",
+    "ip": "IP sursă",
+    "dest_ip": "IP destinație",
+    "protocol": "Protocol",
+    "status": "Stare",
+    "date": "Timestamp"
+  },
+  "severity": {
+    "critical": "CRITIC",
+    "high": "Risc ridicat",
+    "medium": "Risc mediu",
+    "safe": "SIGUR"
+  }
+}
