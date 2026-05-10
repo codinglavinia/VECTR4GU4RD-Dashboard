@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@types/papaparse": "^5.5.2",
+    "html2canvas": "^1.4.1",
     "i18next": "^26.0.10",
     "i18next-browser-languagedetector": "^8.2.1",
+    "jspdf": "^2.5.1",
     "papaparse": "^5.5.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

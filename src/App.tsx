@@ -24,7 +24,7 @@ export default function App() {
       <Sidebar />
 
       <div className="main-content">
-        <Header />
+        <Header stats={stats} alerts={alerts} />
 
         <div style={{ padding: '32px 40px', maxWidth: '1600px', margin: '0 auto', width: '100%' }}>
           <StatsGrid stats={stats} loading={loading} />
