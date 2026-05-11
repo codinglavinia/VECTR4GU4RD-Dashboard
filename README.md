@@ -1,4 +1,4 @@
-# 🚀VectraGuard Full Stack Aplication 🚀#cross-platform : Android+Web
+# VectraGuard Full Stack Aplication : Android+Web
 
 ## release: Version 1.0.0
 
