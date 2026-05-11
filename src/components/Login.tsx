@@ -7,7 +7,7 @@ interface LoginProps {
   onLogin: () => void;
 }
 
-// === SEGURIDAD SOC: Base de datos de Hashes (SHA-256) ===
+// === Ciberseguridad aplicada:Hashes (SHA-256) ===
 // El código NO contiene contraseñas originales. Solo huellas digitales criptográficas.
 const SECURE_DB = [
   {
@@ -37,7 +37,7 @@ export default function Login({ onLogin }: LoginProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     try {
       const uHash = await hashString(username);
       const pHash = await hashString(password);
@@ -76,22 +76,22 @@ export default function Login({ onLogin }: LoginProps) {
           <div className="form-group">
             <label>{t('login.label')}</label>
             <div className="input-wrapper">
-              <input 
-                type="text" 
-                placeholder="" 
+              <input
+                type="text"
+                placeholder=""
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
               />
             </div>
           </div>
-          
+
           <div className="form-group">
             <label>{t('login.password')}</label>
             <div className="input-wrapper">
-              <input 
-                type="password" 
-                placeholder="" 
+              <input
+                type="password"
+                placeholder=""
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
