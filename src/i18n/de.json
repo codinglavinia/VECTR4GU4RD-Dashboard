@@ -62,5 +62,20 @@
     "secure_access": "Secure access to your digital environment",
     "create_account": "Create account",
     "forgot_password": "Forgot password?"
+  },
+  "report": {
+    "title": "VectraGuard Sicherheitsbericht",
+    "executive_summary": "Zusammenfassung",
+    "total_records": "GESAMT DATENSÄTZE",
+    "threats": "BEDROHUNGEN",
+    "protected": "GESCHÜTZT",
+    "vulnerabilities": "VULNERABILITÄTEN",
+    "threat_distribution": "Bedrohungsverteilungsanalyse",
+    "recent_incidents": "Aktuelle kritische Vorfälle",
+    "timestamp": "ZEITSTEMPEL",
+    "source_ip": "QUELL-IP",
+    "detection": "ERKENNUNG",
+    "severity": "SCHWEREGRAD",
+    "footer": "© 2026 VectraGuard Cyber Intelligence - VERTRAULICHES DOKUMENT"
   }
 }

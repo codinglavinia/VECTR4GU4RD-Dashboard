@@ -31,14 +31,14 @@ export default function Header({ stats, alerts }: HeaderProps) {
     doc.rect(0, 0, 210, 40, 'F');
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(22);
-    doc.text('VectraGuard Security Report', 20, 25);
+    doc.text(t('report.title'), 20, 25);
     doc.setFontSize(10);
-    doc.text(`Generated: ${timestamp}`, 145, 25);
+    doc.text(`${t('report.timestamp')}: ${timestamp}`, 140, 25);
 
     // --- RESUMEN EJECUTIVO ---
     doc.setTextColor(30, 41, 59);
     doc.setFontSize(16);
-    doc.text('Executive Summary', 20, 55);
+    doc.text(t('report.executive_summary'), 20, 55);
     
     // Tarjetas de datos (Simuladas en PDF)
     doc.setDrawColor(226, 232, 240);
@@ -47,11 +47,11 @@ export default function Header({ stats, alerts }: HeaderProps) {
     doc.rect(110, 60, 40, 25);
     doc.rect(155, 60, 40, 25);
 
-    doc.setFontSize(8);
-    doc.text('TOTAL RECORDS', 25, 68);
-    doc.text('THREATS', 70, 68);
-    doc.text('PROTECTED', 115, 68);
-    doc.text('VULNERABILITIES', 160, 68);
+    doc.setFontSize(7);
+    doc.text(t('report.total_records'), 22, 68);
+    doc.text(t('report.threats'), 67, 68);
+    doc.text(t('report.protected'), 112, 68);
+    doc.text(t('report.vulnerabilities'), 157, 68);
 
     doc.setFontSize(12);
     doc.setTextColor(79, 70, 229);
@@ -63,10 +63,10 @@ export default function Header({ stats, alerts }: HeaderProps) {
     doc.setTextColor(245, 158, 11);
     doc.text(`${stats?.failures || 0}`, 160, 78);
 
-    // --- GRÁFICA DE DISTRIBUCIÓN (Dynamic Chart in PDF) ---
+    // --- GRÁFICA DE DISTRIBUCIÓN ---
     doc.setTextColor(30, 41, 59);
     doc.setFontSize(14);
-    doc.text('Threat Distribution Analysis', 20, 105);
+    doc.text(t('report.threat_distribution'), 20, 105);
 
     const categories = ['Exploits', 'DoS', 'Fuzzers', 'Recon'];
     const values = [
@@ -80,10 +80,9 @@ export default function Header({ stats, alerts }: HeaderProps) {
     const chartHeight = 40;
     const barWidth = 25;
     
-    // Ejes
     doc.setDrawColor(150, 150, 150);
-    doc.line(StartX - 5, 150, StartX + 140, 150); // Eje X
-    doc.line(StartX - 5, 150, StartX - 5, 115); // Eje Y
+    doc.line(25, 150, 165, 150); 
+    doc.line(25, 150, 25, 115); 
 
     categories.forEach((cat, i) => {
       const h = (values[i] / Math.max(...values, 1)) * chartHeight;
@@ -96,20 +95,20 @@ export default function Header({ stats, alerts }: HeaderProps) {
 
     // --- TABLA DE ALERTAS ---
     doc.setFontSize(14);
-    doc.text('Recent Critical Incidents', 20, 175);
+    doc.text(t('report.recent_incidents'), 20, 175);
     
-    doc.setFontSize(9);
+    doc.setFontSize(8);
     let y = 185;
     doc.setFillColor(248, 250, 252);
     doc.rect(20, y - 5, 170, 8, 'F');
-    doc.text('TIMESTAMP', 25, y);
-    doc.text('SOURCE IP', 60, y);
-    doc.text('DETECTION', 100, y);
-    doc.text('SEVERITY', 150, y);
+    doc.text(t('report.timestamp'), 25, y);
+    doc.text(t('report.source_ip'), 60, y);
+    doc.text(t('report.detection'), 100, y);
+    doc.text(t('report.severity'), 150, y);
 
     y += 10;
-    alerts?.slice(0, 8).forEach(alert => {
-      if (y < 270) {
+    alerts?.slice(0, 10).forEach(alert => {
+      if (y < 275) {
         doc.text(alert.timestamp, 25, y);
         doc.text(alert.ip, 60, y);
         doc.text(t(alert.attack_cat) || alert.attack_cat, 100, y);
@@ -123,9 +122,9 @@ export default function Header({ stats, alerts }: HeaderProps) {
     // --- PIE DE PÁGINA ---
     doc.setFontSize(8);
     doc.setTextColor(150, 150, 150);
-    doc.text('© 2026 VectraGuard Cyber Intelligence - TFG Demo Environment', 105, 290, { align: 'center' });
+    doc.text(t('report.footer'), 105, 290, { align: 'center' });
 
-    doc.save(`VectraGuard_SOC_Report_${new Date().getTime()}.pdf`);
+    doc.save(`VectraGuard_Report_${i18n.language}_${new Date().getTime()}.pdf`);
   };
 
   return (

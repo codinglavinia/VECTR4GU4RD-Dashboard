@@ -62,5 +62,20 @@
     "secure_access": "Secure access to your digital environment",
     "create_account": "Create account",
     "forgot_password": "Forgot password?"
+  },
+  "report": {
+    "title": "Raport de Securitate VectraGuard",
+    "executive_summary": "Rezumat Executiv",
+    "total_records": "TOTAL REGISTRE",
+    "threats": "AMENINȚĂRI",
+    "protected": "PROTEJATE",
+    "vulnerabilities": "VULNERABILITĂȚI",
+    "threat_distribution": "Analiza Distribuției Amenințărilor",
+    "recent_incidents": "Incidente Critice Recente",
+    "timestamp": "TIMP",
+    "source_ip": "IP SURSĂ",
+    "detection": "DETECȚIE",
+    "severity": "SEVERITATE",
+    "footer": "© 2026 VectraGuard Cyber Intelligence - DOCUMENT CONFIDENȚIAL"
   }
 }
