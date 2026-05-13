@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@types/papaparse": "^5.5.2",
+    "@vercel/speed-insights": "^2.0.0",
     "html2canvas": "^1.4.1",
     "i18next": "^26.0.10",
     "i18next-browser-languagedetector": "^8.2.1",

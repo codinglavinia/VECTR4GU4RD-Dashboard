@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { useDataset } from './hooks/useDataset';
 import Header from './components/Header/Header';
 import AlertsTable from './components/AlertsTable';
@@ -43,6 +44,7 @@ export default function App() {
           <LiveDataStream records={streamRecords} loading={loading} />
         </div>
       </div>
+      <SpeedInsights />
     </div>
   );
 }
