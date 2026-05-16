@@ -71,7 +71,7 @@ VectraGuard Multiplatform System
 ├── android/
 │   └── native modules          # VPN Service + Packet Sniffer (Java)
 │
-└── package.json                # Orquestador del monorepo
+└── package.json                # administrador del monorepo
 ```
 
 ---
