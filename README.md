@@ -17,12 +17,12 @@
 
 
 ---
-🇷🇴 VectraGuard este o aplicație mobile și web pentru monitorizarea securității rețelei, combinând detecția bazată pe regulile de Machine Learning pentru alerte.
-Acest tablou de bord reprezintă interfața centrală a unui sistem de detectare a intruziunilor (IDS) conceput pentru a monitoriza traficul de rețea în timp real.
+🇷🇴 VectraGuard este o aplicație pentru smartphones și web pentru monitorizarea securității rețelei, combinând detecția bazată pe regulile de Machine Learning pentru alerte.
+Acestă interfață vizuală arată un sistem de detectare a intruziunilor de tip IDS conceput pentru a monitoriza traficul de rețea în timp real.
 
-Obiectivul său este: detectarea atacurilor malitioase prin intermediul regulilor și a modelelor M.L cât și generarea de alerte automate pentru analiza pachetelor .
+Obiectivul său este: detectarea atacurilor malitioase prin intermediul regulilor M.L cât și generarea de alerte automate pentru analizarea pachetelor .
 
-Acest sistem oferă vizibilitate completă asupra evenimentelor de rețea, corelarea atacurilor și analiza criminalistică a pachetelor detectate de VectraGuard.
+Acest sistem oferă vizibilitate completă asupra evenimentelor de rețea, corelarea atacurilor și analiza pachetelor detectate de VectraGuard.
 
 
 🇬🇧 VectraGuard is a multiplatform mobile and web cybersecurity application. It integrates a native Android network sniffer implemented in Java (VpnService) with a React-based interface, combining rule-based detection in Python and Machine Learning techniques for traffic analysis, real-time monitoring and alert persistence.
@@ -38,7 +38,7 @@ Proporciona visibilidad completa sobre eventos de red, correlación de ataques y
 
 ---
 
-## 🚀 Características principales:
+##  Características principales:
 
 * 🔴 **Detección en tiempo real** de eventos de red y alertas IDS
 * 🧠 **Clasificación inteligente de ataques** (DDoS, SQLi, Brute Force, Port Scanning, etc.)
@@ -50,7 +50,7 @@ Proporciona visibilidad completa sobre eventos de red, correlación de ataques y
 
 ---
 
-## 🏗️ Arquitectura del sistema :
+##  Arquitectura del sistema :
 
 VectraGuard está diseñado como un **monorepo modular multiplataforma**:
 
@@ -112,7 +112,7 @@ cd VectraGuard-App
 
 ---
 
-### 📦 Instalar dependencias:
+### Instalar dependencias:
 
 ```bash
 npm install
@@ -122,7 +122,7 @@ yarn install
 
 ---
 
-### 🔐 Variables de entorno:
+###  Variables de entorno:
 
 ```bash
 cp .env.example .env.local
@@ -161,7 +161,7 @@ npm run genkit:dev
 
 **Login:** autenticación segura
 
-**Dashboard:** visualización de alertas y métricas IDS
+**Dashboard:** visualización de alertas y métricas IDS+reporte descargable en formato.pdf
 
 **Perfil:** gestión de datos personales
 
@@ -203,7 +203,7 @@ VectraGuard integra detección híbrida basada en:
 
 ---
 
-## 📚 Datasets de Entrenamiento y Evaluación (ML):
+## 📚 Datasets de entrenamiento y evaluación (ML):
 
 El componente de Machine Learning de VectraGuard ha sido entrenado y validado utilizando datasets estándar de investigación en ciberseguridad:
 
@@ -296,7 +296,7 @@ C --> B
 
 ---
 
-## 🧩 Justificación del diseño distribuido:
+## Justificación del diseño distribuido:
 VectraGuard adopta una arquitectura distribuida basada en microservicios ligeros con separación clara de responsabilidades:
 
 * Captura (Android)
@@ -308,7 +308,7 @@ Este enfoque permite escalabilidad horizontal, mantenimiento modular y reducció
 
 ---
 
-## 🏁 Nivel de contribución demonstrado:
+## Nivel de contribución :
 
 * 🔬 Investigación aplicada en detección de intrusiones híbridas
 * ⚙️ Integración de tecnologías reales de producción
