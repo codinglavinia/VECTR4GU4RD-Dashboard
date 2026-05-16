@@ -17,9 +17,15 @@
 
 
 ---
-🇷🇴 VectraGuard este o aplicație mobile și web pentru monitorizarea securității rețelei, combinând detecția bazată pe regulile de Machine Learning pentru alerte în timp real. 
+🇷🇴 VectraGuard este o aplicație mobile și web pentru monitorizarea securității rețelei, combinând detecția bazată pe regulile de Machine Learning pentru alerte.
+Acest tablou de bord reprezintă interfața centrală a unui sistem de detectare a intruziunilor (IDS) conceput pentru a monitoriza traficul de rețea în timp real.
 
-🇬🇧 🇬🇧 VectraGuard is a multiplatform mobile and web cybersecurity application. It integrates a native Android network sniffer implemented in Java (VpnService) with a React-based interface, combining rule-based detection in Python and Machine Learning techniques for traffic analysis, real-time monitoring and alert persistence.
+Obiectivul său este: detectarea atacurilor malitioase prin intermediul regulilor și a modelelor M.L cât și generarea de alerte automate pentru analiza pachetelor .
+
+Acest sistem oferă vizibilitate completă asupra evenimentelor de rețea, corelarea atacurilor și analiza criminalistică a pachetelor detectate de VectraGuard.
+
+
+🇬🇧 VectraGuard is a multiplatform mobile and web cybersecurity application. It integrates a native Android network sniffer implemented in Java (VpnService) with a React-based interface, combining rule-based detection in Python and Machine Learning techniques for traffic analysis, real-time monitoring and alert persistence.
 
 🇩🇪 VectraGuard ist eine Mobile- und Web-App zur Überwachung der Netzwerksicherheit, die regelbasierte Erkennung und Machine Learning für Echtzeitwarnungen kombiniert
 
