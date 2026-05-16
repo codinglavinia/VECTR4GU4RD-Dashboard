@@ -287,10 +287,10 @@ El sistema puede evaluarse mediante métricas estándar de ciberseguridad:
 
 ```mermaid
 graph TD
-A[Android VPN Module] --> B[Backend API]
+A[VectraGuard MOBILE : Android vpn module in Java] --> B[Backend API]
 B --> C[ML Service Python]
 B --> D[Firebase Firestore]
-D --> E[React Dashboard]
+D --> E[VectraGuard WEB : React+ Vite ]
 C --> B
 ```
 
