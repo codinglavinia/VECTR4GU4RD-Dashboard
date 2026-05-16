@@ -76,7 +76,7 @@ VectraGuard Multiplatform System
 
 ---
 
-## 🧠 Stack Tecnológico utilizado :
+##  Stack Tecnológico utilizado :
 
 **Frontend:** React.js + Vite + TypeScript
 
@@ -94,9 +94,7 @@ VectraGuard Multiplatform System
 
 ---
 
-## ⚙️ Instalación y ejecución:
-
-### 📌 Requisitos:
+### Requisitos:
 
 * Node.js ≥ 18 (recomendado LTS)
 * npm o yarn
@@ -157,7 +155,7 @@ npm run genkit:dev
 
 ---
 
-## 👤 Flujo de Usuario:
+## 👤 Flujo de usuario:
 
 **Registro:** creación de usuario con asignación automática de rol
 
@@ -179,18 +177,13 @@ Opciones compatibles:MySQL
 
 ---
 
-## 🚀 Despliegue
+## 🚀 Despliegue:
 
-### Vercel (recomendado)
-
-1. Push a GitHub
-2. Importar proyecto en Vercel
-3. Configurar variables de entorno
-4. Deploy automático
+### Vercel : https://vectraguard-dashboard-web.vercel.app
 
 ---
 
-### Hosting en Firebase 
+### Hosting en Firebase :
 
 ```bash
 npm install -g firebase-tools
@@ -210,14 +203,6 @@ VectraGuard integra detección híbrida basada en:
 
 ---
 
-<div align="center">
-
-##  VectraGuard - Security Architecture
-
-</div>
-
----
-
 ## 📚 Datasets de Entrenamiento y Evaluación (ML):
 
 El componente de Machine Learning de VectraGuard ha sido entrenado y validado utilizando datasets estándar de investigación en ciberseguridad:
@@ -234,7 +219,7 @@ El uso combinado mejora la generalización del modelo  frente a distintos tipos 
 
 ---
 
-## 🧠 Threat Model (Modelo de Amenazas):
+## Threat Model (Modelo de Amenazas):
 
 VectraGuard ha sido diseñado considerando un entorno de red hostil donde un atacante puede:
 
@@ -286,7 +271,7 @@ VectraGuard ha sido diseñado considerando un entorno de red hostil donde un ata
 
 ---
 
-## 📊 Métricas de Evaluación IDS:
+## Métricas de Evaluación IDS:
 
 El sistema puede evaluarse mediante métricas estándar de ciberseguridad:
 
