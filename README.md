@@ -1,6 +1,6 @@
  <div align="center">
 
-# VectraGuard Dashboard - Intrusion Detection System
+# VectraGuard
 
 ![VectraGuard](https://img.shields.io/badge/VectraGuard-IDS%20Dashboard-00E5FF?style=for-the-badge\&logo=shield)
 ![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
@@ -17,24 +17,14 @@
 
 
 ---
-🇷🇴 VectraGuard este o aplicație pentru smartphones și web pentru monitorizarea securității rețelei, combinând detecția bazată pe regulile de Machine Learning pentru alerte.
-Acestă interfață vizuală arată un sistem de detectare a intruziunilor de tip IDS conceput pentru a monitoriza traficul de rețea în timp real.
-
-Obiectivul său este: detectarea atacurilor malitioase prin intermediul regulilor M.L cât și generarea de alerte automate pentru analizarea pachetelor .
-
-Acest sistem oferă vizibilitate completă asupra evenimentelor de rețea, corelarea atacurilor și analiza pachetelor detectate de VectraGuard.
-
+🇷🇴 VectraGuard este o aplicație multiplataformă de securitate cibernetică pentru dispozitive mobile și web. Aceasta integrează un sniffer de rețea nativ pentru Android, implementat în Java (VpnService) cu o interfață bazată pe React, combinând detectarea bazată pe reguli în Python cu tehnici de învățare automată pentru analiza traficului, monitorizarea în timp real și persistența alertelor.
 
 🇬🇧 VectraGuard is a multiplatform mobile and web cybersecurity application. It integrates a native Android network sniffer implemented in Java (VpnService) with a React-based interface, combining rule-based detection in Python and Machine Learning techniques for traffic analysis, real-time monitoring and alert persistence.
 
 🇩🇪 VectraGuard ist eine Mobile- und Web-App zur Überwachung der Netzwerksicherheit, die regelbasierte Erkennung und Machine Learning für Echtzeitwarnungen kombiniert
 
-🇪🇸 VectraGuard es una aplicación multiplataforma( móvil+ web) para la monitorización de seguridad de red, combinando detección basada en reglas de Machine Learning para alertas en tiempo real. 
-Este dashboad es la interfaz central de un Sistema de Detección de Intrusiones (IDS) diseñado para monitorizar tráfico de red en tiempo real.
-
-Su objetivo es : detectar patrones maliciosos mediante reglas y modelos de Machine Learning y generar alertas automáticas para análisis de seguridad.
-
-Proporciona visibilidad completa sobre eventos de red, correlación de ataques y análisis forense de paquetes detectados por el ecosistema VectraGuard.
+🇪🇸 VectraGuard es una aplicación multiplataforma( móvil+ web) para la monitorización de seguridad de red que va combinando detección basada en reglas de Machine Learning para alertas en tiempo real y analisis de logs impresas en reportes semanales.
+Este dashboad es la interfaz principal del sistema de detección de intrusiones (IDS) para monitorizar tráfico de red en tiempo real.
 
 ---
 
