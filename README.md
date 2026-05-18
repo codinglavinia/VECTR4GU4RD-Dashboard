@@ -1,11 +1,19 @@
  <div align="center">
 
-# VectraGuard
+# Hybrid IDS - VΞCTR4GU4RD
 
 ![VectraGuard](https://img.shields.io/badge/VectraGuard-IDS%20Dashboard-00E5FF?style=for-the-badge\&logo=shield)
 ![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
 ![Stack](https://img.shields.io/badge/React-Vite%20%7C%20Firebase%20%7C%20Node.js-4CAF50?style=for-the-badge)
-### v1.0.0 • Developed by **@codinglavinia**
+<p align="center">
+  released version <strong>v1.0.0</strong>
+</p>
+
+<p align="center">
+  Developed by <strong>@codinglavinia</strong>
+</p>
+
+
 <div align="center">
 <a href="https://github.com/sponsors/codinglavinia">
   <img src="https://img.shields.io/badge/Sponsor-♥-FF69B4?style=for-the-badge&logo=github-sponsors" />
