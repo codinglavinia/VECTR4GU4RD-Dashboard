@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
 ![Stack](https://img.shields.io/badge/React-Vite%20%7C%20Firebase%20%7C%20Node.js-4CAF50?style=for-the-badge)
 <p align="center">
-  released version <strong>v1.0.0</strong>
+<strong>v1.0.0</strong>
 </p>
 
 <p align="center">
@@ -96,8 +96,8 @@ VectraGuard Multiplatform System
 
 * Node.js ≥ 18 (recomendado LTS)
 * npm o yarn
-* Android SDK (si se usa módulo nativo)
-* Firebase project configurado (opcional para producción)
+* Android SDK 
+* Firebase project configurado 
 
 ---
 
@@ -171,7 +171,7 @@ npm run genkit:dev
 
 Actualmente esta en Firebase.
 
-Opciones compatibles:MySQL
+SQL Lite en local para verificar persistencia
 
 ---
 
