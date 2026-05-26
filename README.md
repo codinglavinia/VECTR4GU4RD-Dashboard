@@ -33,9 +33,6 @@
 
 🇩🇪 VectraGuard ist eine Mobile- und Web-App zur Überwachung der Netzwerksicherheit, die regelbasierte Erkennung und Machine Learning für Echtzeitwarnungen kombiniert
 
-🇪🇸 VectraGuard es una aplicación multiplataforma( móvil+ web) para la monitorización de seguridad de red que va combinando detección basada en reglas de Machine Learning para alertas en tiempo real y analisis de logs impresas en reportes semanales.
-Este dashboad es la interfaz principal del sistema de detección de intrusiones (IDS) para monitorizar tráfico de red en tiempo real.
-
 ---
 
 ##  Características principales:
