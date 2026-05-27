@@ -1,6 +1,6 @@
  <div align="center">
 
-# Hybrid IDS - VΞCTR4GU4RD
+# VΞCTR4GU4RD - Cybersecurity Intelligence Platform
 
 ![VectraGuard](https://img.shields.io/badge/VectraGuard-IDS%20Dashboard-00E5FF?style=for-the-badge\&logo=shield)
 ![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
@@ -46,6 +46,11 @@
 * 🔔 **Sistema de alertas centralizado en tiempo real (Firebase Firestore)**
 
 ---
+## 🎥 Live Demo
+
+<p align="center">
+  <img src="./src/assets/vectraguard-demo.gif" width="900" alt="VectraGuard Demo"/>
+</p>
 
 ##  Arquitectura del sistema :
 
@@ -277,37 +282,6 @@ El sistema puede evaluarse mediante métricas estándar de ciberseguridad:
 * 📉 **Precision del modelo de detección**
 * 📊 **F1-Score para balance de clasificación**
 * ⏱️ Latencia de detección en tiempo real
-
 ---
 
-## 📈 Diagrama de Arquitectura :
 
-```mermaid
-graph TD
-A[VectraGuard MOBILE : Android vpn module in Java] --> B[Backend API]
-B --> C[ML Service Python]
-B --> D[Firebase Firestore]
-D --> E[VectraGuard WEB : React+ Vite ]
-C --> B
-```
-
----
-
-## Justificación del diseño distribuido:
-VectraGuard adopta una arquitectura distribuida basada en microservicios ligeros con separación clara de responsabilidades:
-
-* Captura (Android)
-* Procesamiento (Backend)
-* Inteligencia (ML Service)
-* Visualización (Web Dashboard)
-
-Este enfoque permite escalabilidad horizontal, mantenimiento modular y reducción de acoplamiento entre componentes críticos del sistema IDS.
-
----
-
-## Nivel de contribución :
-
-* 🔬 Investigación aplicada en detección de intrusiones híbridas
-* ⚙️ Integración de tecnologías reales de producción
-* 🧠 Aplicación de ML en ciberseguridad en tiempo real
-* 📡 Arquitectura multi-plataforma completa (mobile + web + backend)
