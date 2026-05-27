@@ -22,8 +22,6 @@
 </div>
 </div>
 
-
-
 ---
 🇷🇴 VectraGuard este o aplicație multiplataformă de securitate cibernetică pentru dispozitive mobile și web. Aceasta integrează un sniffer de rețea nativ pentru Android, implementat în Java (VpnService) cu o interfață bazată pe React, combinând detectarea bazată pe reguli în Python cu tehnici de învățare automată pentru analiza traficului, monitorizarea în timp real și persistența alertelor.
 
@@ -46,10 +44,10 @@
 * 🔔 **Sistema de alertas centralizado en tiempo real (Firebase Firestore)**
 
 ---
-## 🎥 Live Demo
+## 🎥 Live Demo:
 
 <p align="center">
-  <img src="./src/assets/vectraguard-demo.gif" width="900" alt="VectraGuard Demo"/>
+  <img src="./src/assets/vectraguard-demo.gif" width="800" alt="VectraGuard Demo"/>
 </p>
 
 ##  Arquitectura del sistema :
