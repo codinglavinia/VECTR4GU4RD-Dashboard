@@ -219,31 +219,6 @@ El uso combinado mejora la generalización del modelo  frente a distintos tipos 
 
 ---
 
-## Threat Model (Modelo de Amenazas):
-
-VectraGuard ha sido diseñado considerando un entorno de red hostil donde un atacante puede:
-
-* 📡 Inyectar tráfico malicioso (DDoS, spoofing, scanning)
-* 🧬 Evadir detección mediante fragmentación de paquetes
-* 🕵️ Intentar falsificación de identidad (IP spoofing)
-* 💥 Explorar vulnerabilidades de servicios expuestos
-
-### Superficie de ataque :
-
-* API Backend (Node.js/Express)
-* Canal de ingestión de alertas (Firestore)
-* Servicio ML (Python)
-* Módulo Android VPN (Packet capture layer)
-
-### Mitigaciones implementadas:
-
-* Validación estricta de inputs en backend
-* Separación de servicios (arquitectura modular)
-* Control de acceso basado en roles (RBAC)
-* Sanitización de datos antes de persistencia
-
----
-
 ## 🔐 Seguridad del Sistema:
 
 * 🔑 Autenticación basada en tokens (JWT o equivalente)
